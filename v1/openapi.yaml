@@ -115,9 +115,9 @@ info:
     name: MIT
     url: 'https://raw.githubusercontent.com/zenvia/zenvia-openapi-spec/master/LICENSE.md'
   x-logo:
-    url: 'https://zenvia.github.io/zenvia-openapi-spec/zenapi.png'
+    url: 'https://zenvia.github.io/zenvia-openapi-spec/assets/zenapi.png'
 servers:
-  - url: 'https://api.zenvia.com/v1'
+  - url: 'https://api.zenvia.com/v2'
 paths:
   /channels/facebook/messages:
     post:
@@ -143,7 +143,7 @@ paths:
         - lang: Shell
           label: Bash
           source: |
-            curl "https://api.zenvia.com/v1/channels/facebook/messages" \
+            curl "https://api.zenvia.com/v2/channels/facebook/messages" \
             -H "Content-Type: application/json" \
             -H "X-API-TOKEN: YOUR_API_TOKEN" \
             -d '{
@@ -160,7 +160,7 @@ paths:
             const { post } = require('request-promise');
 
             post({
-              uri: 'https://api.zenvia.com/v1/channels/facebook/messages',
+              uri: 'https://api.zenvia.com/v2/channels/facebook/messages',
               headers: {
                 'X-API-TOKEN': 'YOUR_API_TOKEN'
               },
@@ -252,7 +252,7 @@ paths:
         - lang: Shell
           label: Bash
           source: |
-            curl "https://api.zenvia.com/v1/channels/sms/messages" \
+            curl "https://api.zenvia.com/v2/channels/sms/messages" \
             -H "Content-Type: application/json" \
             -H "X-API-TOKEN: YOUR_API_TOKEN" \
             -d '{
@@ -269,7 +269,7 @@ paths:
             const { post } = require('request-promise');
 
             post({
-              uri: 'https://api.zenvia.com/v1/channels/sms/messages',
+              uri: 'https://api.zenvia.com/v2/channels/sms/messages',
               headers: {
                 'X-API-TOKEN': 'YOUR_API_TOKEN'
               },
@@ -361,7 +361,7 @@ paths:
         - lang: Shell
           label: Bash
           source: |
-            curl "https://api.zenvia.com/v1/channels/whatsapp/messages" \
+            curl "https://api.zenvia.com/v2/channels/whatsapp/messages" \
             -H "Content-Type: application/json" \
             -H "X-API-TOKEN: YOUR_API_TOKEN" \
             -d '{
@@ -378,7 +378,7 @@ paths:
             const { post } = require('request-promise');
 
             post({
-              uri: 'https://api.zenvia.com/v1/channels/whatsapp/messages',
+              uri: 'https://api.zenvia.com/v2/channels/whatsapp/messages',
               headers: {
                 'X-API-TOKEN': 'YOUR_API_TOKEN'
               },

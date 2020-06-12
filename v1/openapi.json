@@ -15,12 +15,12 @@
       "url": "https://raw.githubusercontent.com/zenvia/zenvia-openapi-spec/master/LICENSE.md"
     },
     "x-logo": {
-      "url": "https://zenvia.github.io/zenvia-openapi-spec/zenapi.png"
+      "url": "https://zenvia.github.io/zenvia-openapi-spec/assets/zenapi.png"
     }
   },
   "servers": [
     {
-      "url": "https://api.zenvia.com/v1"
+      "url": "https://api.zenvia.com/v2"
     }
   ],
   "paths": {
@@ -59,12 +59,12 @@
           {
             "lang": "Shell",
             "label": "Bash",
-            "source": "curl \"https://api.zenvia.com/v1/channels/facebook/messages\" \\\n-H \"Content-Type: application/json\" \\\n-H \"X-API-TOKEN: YOUR_API_TOKEN\" \\\n-d '{\n  \"from\": \"sender-identifier\",\n  \"to\": \"recipient-identifier\",\n  \"contents\": [{\n    \"type\": \"text\",\n    \"text\": \"Some text message\"\n  }]\n}'\n"
+            "source": "curl \"https://api.zenvia.com/v2/channels/facebook/messages\" \\\n-H \"Content-Type: application/json\" \\\n-H \"X-API-TOKEN: YOUR_API_TOKEN\" \\\n-d '{\n  \"from\": \"sender-identifier\",\n  \"to\": \"recipient-identifier\",\n  \"contents\": [{\n    \"type\": \"text\",\n    \"text\": \"Some text message\"\n  }]\n}'\n"
           },
           {
             "lang": "JavaScript",
             "label": "Node.js",
-            "source": "const { post } = require('request-promise');\n\npost({\n  uri: 'https://api.zenvia.com/v1/channels/facebook/messages',\n  headers: {\n    'X-API-TOKEN': 'YOUR_API_TOKEN'\n  },\n  body: {\n    from: 'sender-identifier',\n    to: 'recipient-identifier',\n    contents: [{\n      type: 'text',\n      text: 'Some text message'\n    }]\n  },\n  json: true\n})\n.then((response) => {\n  console.log('Response:', response);\n})\n.catch((error) => {\n  console.log('Error:', error);\n});\n"
+            "source": "const { post } = require('request-promise');\n\npost({\n  uri: 'https://api.zenvia.com/v2/channels/facebook/messages',\n  headers: {\n    'X-API-TOKEN': 'YOUR_API_TOKEN'\n  },\n  body: {\n    from: 'sender-identifier',\n    to: 'recipient-identifier',\n    contents: [{\n      type: 'text',\n      text: 'Some text message'\n    }]\n  },\n  json: true\n})\n.then((response) => {\n  console.log('Response:', response);\n})\n.catch((error) => {\n  console.log('Error:', error);\n});\n"
           },
           {
             "lang": "JavaScript",
@@ -114,12 +114,12 @@
           {
             "lang": "Shell",
             "label": "Bash",
-            "source": "curl \"https://api.zenvia.com/v1/channels/sms/messages\" \\\n-H \"Content-Type: application/json\" \\\n-H \"X-API-TOKEN: YOUR_API_TOKEN\" \\\n-d '{\n  \"from\": \"sender-identifier\",\n  \"to\": \"recipient-identifier\",\n  \"contents\": [{\n    \"type\": \"text\",\n    \"text\": \"Some text message\"\n  }]\n}'\n"
+            "source": "curl \"https://api.zenvia.com/v2/channels/sms/messages\" \\\n-H \"Content-Type: application/json\" \\\n-H \"X-API-TOKEN: YOUR_API_TOKEN\" \\\n-d '{\n  \"from\": \"sender-identifier\",\n  \"to\": \"recipient-identifier\",\n  \"contents\": [{\n    \"type\": \"text\",\n    \"text\": \"Some text message\"\n  }]\n}'\n"
           },
           {
             "lang": "JavaScript",
             "label": "Node.js",
-            "source": "const { post } = require('request-promise');\n\npost({\n  uri: 'https://api.zenvia.com/v1/channels/sms/messages',\n  headers: {\n    'X-API-TOKEN': 'YOUR_API_TOKEN'\n  },\n  body: {\n    from: 'sender-identifier',\n    to: 'recipient-identifier',\n    contents: [{\n      type: 'text',\n      text: 'Some text message'\n    }]\n  },\n  json: true\n})\n.then((response) => {\n  console.log('Response:', response);\n})\n.catch((error) => {\n  console.log('Error:', error);\n});\n"
+            "source": "const { post } = require('request-promise');\n\npost({\n  uri: 'https://api.zenvia.com/v2/channels/sms/messages',\n  headers: {\n    'X-API-TOKEN': 'YOUR_API_TOKEN'\n  },\n  body: {\n    from: 'sender-identifier',\n    to: 'recipient-identifier',\n    contents: [{\n      type: 'text',\n      text: 'Some text message'\n    }]\n  },\n  json: true\n})\n.then((response) => {\n  console.log('Response:', response);\n})\n.catch((error) => {\n  console.log('Error:', error);\n});\n"
           },
           {
             "lang": "JavaScript",
@@ -169,12 +169,12 @@
           {
             "lang": "Shell",
             "label": "Bash",
-            "source": "curl \"https://api.zenvia.com/v1/channels/whatsapp/messages\" \\\n-H \"Content-Type: application/json\" \\\n-H \"X-API-TOKEN: YOUR_API_TOKEN\" \\\n-d '{\n  \"from\": \"sender-identifier\",\n  \"to\": \"recipient-identifier\",\n  \"contents\": [{\n    \"type\": \"text\",\n    \"text\": \"Some text message\"\n  }]\n}'\n"
+            "source": "curl \"https://api.zenvia.com/v2/channels/whatsapp/messages\" \\\n-H \"Content-Type: application/json\" \\\n-H \"X-API-TOKEN: YOUR_API_TOKEN\" \\\n-d '{\n  \"from\": \"sender-identifier\",\n  \"to\": \"recipient-identifier\",\n  \"contents\": [{\n    \"type\": \"text\",\n    \"text\": \"Some text message\"\n  }]\n}'\n"
           },
           {
             "lang": "JavaScript",
             "label": "Node.js",
-            "source": "const { post } = require('request-promise');\n\npost({\n  uri: 'https://api.zenvia.com/v1/channels/whatsapp/messages',\n  headers: {\n    'X-API-TOKEN': 'YOUR_API_TOKEN'\n  },\n  body: {\n    from: 'sender-identifier',\n    to: 'recipient-identifier',\n    contents: [{\n      type: 'text',\n      text: 'Some text message'\n    }]\n  },\n  json: true\n})\n.then((response) => {\n  console.log('Response:', response);\n})\n.catch((error) => {\n  console.log('Error:', error);\n});\n"
+            "source": "const { post } = require('request-promise');\n\npost({\n  uri: 'https://api.zenvia.com/v2/channels/whatsapp/messages',\n  headers: {\n    'X-API-TOKEN': 'YOUR_API_TOKEN'\n  },\n  body: {\n    from: 'sender-identifier',\n    to: 'recipient-identifier',\n    contents: [{\n      type: 'text',\n      text: 'Some text message'\n    }]\n  },\n  json: true\n})\n.then((response) => {\n  console.log('Response:', response);\n})\n.catch((error) => {\n  console.log('Error:', error);\n});\n"
           },
           {
             "lang": "JavaScript",
